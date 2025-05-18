@@ -40,5 +40,7 @@ form.addEventListener('submit', async event => {
     iziToast.error({ message: 'Something went wrong!', position: 'topRight' });
   } finally {
     hideLoader();
+    form.reset();
+
   }
 });

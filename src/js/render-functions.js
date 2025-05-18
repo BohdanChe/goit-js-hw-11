@@ -24,10 +24,14 @@ export function createGallery(images) {
     `
     )
     .join('');
-
-  gallery.insertAdjacentHTML('beforeend', markup);
-  lightbox.refresh();
+  
+    
+  
+    gallery.insertAdjacentHTML('beforeend', markup);
+    lightbox.refresh();
 }
+
+
 
 export function clearGallery() {
   gallery.innerHTML = '';
